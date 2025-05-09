@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFG Interactive Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Webpage of Intended For Good Digital Services</h1>
+        <p><strong>Demonstrating JavaScript Concepts</strong></p>
+    </header>
+
+    <main>
+        <!-- Event Handling Section -->
+        <section id="event-section">
+            <h2>Event Handling 🎯</h2>
+            
+            <div class="event-box">
+                <button id="click-button" class="event-button">Click Me!</button>
+                <p id="click-output">Button not clicked yet</p>
+            </div>
+            
+            <div class="event-box hover-box" id="hover-box">
+                <p>Hover over me!</p>
+                <div id="hover-effect"></div>
+            </div>
+            
+            <div class="event-box">
+                <p>Type something here:</p>
+                <input type="text" id="keypress-input" placeholder="Start typing...">
+                <p id="keypress-output">No keypress detected yet</p>
+            </div>
+            
+            <div class="event-box">
+                <p id="secret-box">Double click me for a secret!</p>
+                <p id="double-click-output">No secret revealed yet</p>
+            </div>
+        </section>
+
+        <!-- Interactive Elements Section -->
+        <section id="interactive-section">
+            <h2>Interactive Elements 🎮</h2>
+            
+            <div class="interactive-box">
+                <button id="color-changer" class="interactive-button">Change My Color</button>
+            </div>
+            
+            <div class="interactive-box">
+                <h3>Image Gallery</h3>
+                <div class="gallery">
+                    <img id="gallery-image" src="https://picsum.photos/id/10/600/400" alt="Gallery image">
+                    <div class="gallery-controls">
+                        <button id="prev-btn">Previous</button>
+                        <button id="next-btn">Next</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="interactive-box">
+                <h3>Accordion Content</h3>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">Section 1</button>
+                        <div class="accordion-content">
+                            <p>Content for section 1 goes here. This is hidden by default and revealed when clicked.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">Section 2</button>
+                        <div class="accordion-content">
+                            <p>Content for section 2 goes here. More interesting facts about accordions!</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">Section 3</button>
+                        <div class="accordion-content">
+                            <p>Content for section 3 goes here. Did you know accordions are musical instruments?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Validation Section -->
+        <section id="form-section">
+            <h2>Form Validation 📋</h2>
+            
+            <form id="validation-form">
+                <div class="form-group">
+                    <label for="name">Name (required):</label>
+                    <input type="text" id="name" name="name">
+                    <div class="error-message" id="name-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email (must be valid):</label>
+                    <input type="email" id="email" name="email">
+                    <div class="error-message" id="email-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password (min 8 chars):</label>
+                    <input type="password" id="password" name="password">
+                    <div class="error-message" id="password-error"></div>
+                    <div class="password-strength">
+                        <div class="strength-bar" id="strength-bar"></div>
+                        <span id="strength-text">Password strength</span>
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-button">Submit Form</button>
+            </form>
+            
+            <div id="form-success" class="success-message">
+                Form submitted successfully!
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Intended For Good Digital Services Interactive Webpage &copy; 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
